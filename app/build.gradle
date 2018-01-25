@@ -11,6 +11,22 @@ android {
         versionCode 1
         versionName "1.0"
     }
+    //签名
+    signingConfigs {
+
+        debug {
+            storeFile file('amapDemo.jks')
+            storePassword 'android'
+            keyAlias 'amapDemo'
+            keyPassword 'android'
+        }
+        release {// 自己的签名文件
+            storeFile file('amapDemo.jks')
+            storePassword 'android'
+            keyAlias 'amapDemo'
+            keyPassword 'android'
+        }
+    }
     buildTypes {
         release {
             minifyEnabled false
@@ -18,7 +34,6 @@ android {
         }
     }
 }
-
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
 }
