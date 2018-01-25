@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- 地图 Window Dialog-->
+    <style name="aMapWindowDialog" parent="@android:style/Theme.Dialog">
+        <!--移除边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--去除顶部标题栏-->
+        <item name="android:windowNoTitle">true</item>
+        <!--窗体透明-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--背景透明-->
+        <item name="android:background">@android:color/white</item>
+        <!--窗体背景透明-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--窗体是否浮动-->
+        <item name="android:windowIsFloating">false</item>
+        <!--背景是否昏暗-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--昏暗数量-->
+        <item name="android:backgroundDimAmount">0.6</item>
+        <!--解决黑白屏问题-->
+        <item name="android:windowContentOverlay">@null</item>
+
+    </style>
+    <!--Dialog -->
+    <style name="DialogThemeForgetAnim">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+</resources>
